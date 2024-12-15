@@ -36,8 +36,8 @@ export default function FooterBottom(){
                         </ul>
                     </article>
                     <div className={styles.apps_links}>
-                        <img src="../src/appStore.png" alt="appStore" />
-                        <img src="../src/googlePlay.png" alt="googlePlay" />
+                        <img src="../../public/images/appStore.png" alt="appStore" />
+                        <img src="../../public/images/googlePlay.png" alt="googlePlay" />
                     </div>
 
                 </div>
