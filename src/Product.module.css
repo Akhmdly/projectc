@@ -1,0 +1,19 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+.card {
+    padding: 16px;
+}
+.image {
+    width: 100%;
+    height: 404px;
+    border-radius: 4px;
+}
+.product_title{
+    font-size: 14px;
+    height: 50px;
+}    

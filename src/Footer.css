@@ -1,0 +1,77 @@
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #1b2845;
+    color: white;
+    padding: 50px 0;
+  }
+.footer-left {
+    display: flex;
+    width: 1140px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-text{
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.banner {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.banner h4{
+    padding: 0 0 15px;
+    font-size: 25px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+}
+.adidas-logo {
+    width: 50px;
+    margin-bottom: 20px;
+}
+.line{
+    display: block;
+    width: 16px;
+    height: 2px;
+    background-color: white;
+}
+.social-links{
+    display: flex;
+    gap: 30px;
+}
+.social-links a{
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.social-links a.facebook {
+    background-image: url("./icons/facebook_white_icon.svg");
+}
+.social-links a.instagram {
+    background-image: url("./icons/instagram_white_icon.svg");
+    background-size: 16px;
+}
+.social-links a.linkedin {
+    background-image: url("./icons/linkedin_white_icon.svg");
+}
+.social-links a.youtube {
+    background-image: url("./icons/youtube_white_icon.svg");
+}
+.social-links a.tiktok {
+    background-image: url("./icons/tiktok_white_icon.svg");
+    background-size: 21px;
+}

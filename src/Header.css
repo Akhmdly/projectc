@@ -1,0 +1,91 @@
+.app {
+    font-family: Arial, sans-serif;
+  }
+  .about-us{
+    background-color: #f5f5f5;
+  }
+  .top-bar {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: right;
+    padding: 10px 0;
+  }
+  .top-links a {
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  
+  .language {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: black;
+    padding: 0 25px;
+  }
+  
+  .header {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .logo {
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .main-menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  .user-options {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .icon-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .your-account{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-left: 1px solid #b1bcbc;
+    padding-left: 20px;
+  }
+  .account-link {
+    text-decoration: none;
+    color: black;
+  }
+  .sub-menu-nav{
+    padding: 10px 0;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: center;
+  }
+  .sub-menu {
+    width: 1350px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .sub-menu a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  .sub-menu .highlight {
+    color: red;
+  }
