@@ -10,7 +10,7 @@ const ProductCard = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [favorites, setFavorites] = useState([]);
-  const [showNotification, setShowNotification] = useState(false); // Bildiriş üçün state
+  const [showNotification, setShowNotification] = useState(false);
   const { addToBasket } = useBasket();
 
   useEffect(() => {
@@ -40,7 +40,7 @@ const ProductCard = () => {
   const handleAddToBasket = () => {
     addToBasket(product);
     setShowNotification(true);
-    setTimeout(() => setShowNotification(false), 2000); // 2 saniyə sonra bildirişi gizlə
+    setTimeout(() => setShowNotification(false), 2000);
   };
 
   const isFavorite = favorites.includes(id);
