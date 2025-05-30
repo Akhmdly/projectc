@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
 .arrow-button {
-  background: none;
+  background: rgba(255, 255, 255, 0.2);
   border: none;
   color: white;
-  font-size: 30px;
+  font-size: 24px;
   cursor: pointer;
-  margin: 0 10px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
 }
-
-/*slider*/
-.slider{
+.left-arrow { left: 12%; }
+.right-arrow { right: 12%; }
+/* Slider */
+.slider {
   position: relative;
 }
 .slider-image {
@@ -24,41 +28,25 @@
   text-align: center;
   transition: opacity 5s ease-in-out;
 }
-.arrow-button {
-  padding: 20px;
-  background-color: transparent;
-  background-color: rgba(255, 255, 255, 0.2);
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-}
-.left-arrow{
-  left: 12%;
-}
-.right-arrow{
-  right: 12%;
-}
-
-/*sidebar*/
-.filtered-side{
+/* Sidebar */
+.filtered-side {
   border: 1px solid #ddd;
 }
-.app-container{
+.app-container {
   display: flex;
   justify-content: space-between;
 }
-.filter-item{
+.filter-item {
   width: 300px;
   padding: 20px 30px;
 }
-.main-content{
+/* Main Content */
+.main-content {
   display: flex;
   flex-direction: column;
   width: 1000px;
 }
-.main-content .top-bar{
+.main-content .top-bar {
   display: flex;
   justify-content: space-between;
   width: inherit;
@@ -68,64 +56,65 @@
   font-weight: bold;
   text-decoration: underline;
 }
-
-.product_card{
+/* Product Card */
+.product_card {
   display: flex;
   width: 1110px;
   margin: 30px auto;
   justify-content: space-between;
 }
-.product_info{
+.product_info {
   width: 540px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.product_info h1{
+.product_info h1 {
   font-size: 50px;
   color: rgb(201, 4, 4);
-  margin: 50px 0 40px 0;
+  margin: 50px 0 40px;
 }
-.product_info button{
-    border: 0;
-    border-radius: 10px;
-    padding: 20px;
-    font-size: 20px;
-    color: white;
-    background-color: #f27707;
-    font-weight: 600;
-    align-self: start;
-    margin: 20px 0;
-  }
-  .product_info button:hover{
-    background-color: #db6c04;
-    cursor: pointer;
-  }
-.shopping-card{
+.product_info button {
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+  background-color: #f27707;
+  font-weight: 600;
+  align-self: start;
+  margin: 20px 0;
+}
+.product_info button:hover {
+  background-color: #db6c04;
+  cursor: pointer;
+}
+/* Shopping Cards */
+.shopping-card {
   display: flex;
   justify-content: center;
   gap: 25px;
 }
-.shopping-card>div{
+.shopping-card > div {
   width: 424px;
   height: 570px;
   position: relative;
 }
-.card-div{
+.card-div {
   height: 150px;
   position: absolute;
   bottom: 50px;
   left: 28%;
   text-align: center;
 }
-.card-div h2{
+.card-div h2 {
   color: #fff;
   text-transform: uppercase;
-  padding: 0 0 35px;
+  padding-bottom: 35px;
   font-size: 35px;
   font-weight: 800;
 }
-.card-div button{
+.card-div button {
   height: 66px;
   padding: 0 35px;
   font-size: 17px;
@@ -134,86 +123,65 @@
   font-weight: 800;
   background: #fff;
   outline: none;
-  border: 0;
+  border: none;
 }
-.container-gray{
+.container-gray {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   max-width: 1320px;
   margin: 50px auto;
   padding: 55px 50px;
-  position: relative;
-  height: 100%;
   background: #f4f4f4;
 }
-.gray-part{
+.gray-part {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-content: stretch;
   align-items: center;
   width: calc(25% - 25px);
 }
-.gray-part p{
+.gray-part p {
   font-size: 18px;
   line-height: 1.33;
 }
-.icon{
-  padding: 0 20px 0 0;
+.icon {
+  padding-right: 20px;
 }
-.ascd{
+.ascd {
   font-weight: bold;
   padding: 5px 10px;
   margin-right: 5px;
-  border: 1px solid #fefefc;
-  background-color: #fff;
-  cursor: pointer;
-  border-radius: 45%;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-.ascd {
-  padding: 5px 10px;
   border: 1px solid #ccc;
   background-color: #fff;
-  cursor: pointer;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
   transition: all 0.2s ease;
 }
-
 .ascd:hover {
   background-color: #f0f0f0;
 }
-
 .confirm-btn {
   padding: 10px 20px;
   background-color: #7a5f5f;
   color: white;
   border: none;
   border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
   font-size: 16px;
   font-weight: 600;
+  cursor: pointer;
   margin-top: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
 }
-
 .confirm-btn:hover {
   background-color: #694c4c;
 }
-.empty{
+.empty {
   font-size: 25px;
   text-align: center;
   margin: 90px;
   color: gray;
 }
-
-
-/* Register.css */
 .register-container {
   display: flex;
   justify-content: center;
@@ -221,33 +189,28 @@
   min-height: 80vh;
   background: #f4f4f4;
 }
-
 .form-box {
   background: white;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  width: 100%;
   max-width: 400px;
+  width: 100%;
 }
-
 .form-box h2 {
   text-align: center;
   margin-bottom: 25px;
   font-size: 24px;
   color: #212d4a;
 }
-
 .input-group {
   margin-bottom: 20px;
 }
-
 .input-group label {
   display: block;
   margin-bottom: 6px;
   color: #333;
 }
-
 .input-group input {
   width: 100%;
   padding: 10px 12px;
@@ -255,7 +218,6 @@
   border-radius: 6px;
   font-size: 16px;
 }
-
 .submit-button {
   width: 100%;
   padding: 12px;
@@ -267,18 +229,15 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .submit-button:hover {
   background-color: #1a2238;
 }
-
 .toggle-text {
   margin-top: 20px;
   text-align: center;
   font-size: 14px;
   color: #555;
 }
-
 .toggle-button {
   background: none;
   border: none;
@@ -289,14 +248,13 @@
   font-size: 14px;
   text-decoration: underline;
 }
-.delete-product{
+.delete-product {
   padding: 2px 30px;
   margin: 40px 0;
   background-color: #f0f0f0;
-  border: 0;
+  border: 1px solid #ddd;
   border-radius: 10px;
   font-weight: 600;
-  border: 1px solid #ddd;
 }
 .notification {
   margin-top: 15px;
@@ -308,7 +266,6 @@
   font-size: 16px;
   animation: fadeInOut 2s ease-in-out;
 }
-
 @keyframes fadeInOut {
   0% { opacity: 0; transform: translateY(-10px); }
   20% { opacity: 1; transform: translateY(0); }
