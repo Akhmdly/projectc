@@ -42,11 +42,10 @@ export default function Header() {
           </div>
             <nav className="main-menu">
               <NavLink to="/kishiler" className="active-link">Kişilər</NavLink>
-              <NavLink to="/qadinlar" className="active-link">Qadınlar</NavLink>          
-              <NavLink to="/ushaqlar" className="active-link">Uşaqlar</NavLink>         
+              <NavLink to="/qadinlar" className="active-link">Qadınlar</NavLink>
+              <NavLink to="/ushaqlar" className="active-link">Uşaqlar</NavLink>
             </nav>
         </div>
-        
         <div className="user-options">
           <button className="icon-button">
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,15 +56,15 @@ export default function Header() {
           <button className="icon-button">
             <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fillRule="evenodd" clipRule="evenodd" d="M13.2027 15.7238C15.2406 13.9873 17.0009 12.4872 18.2255 11.0094C19.5945 9.35765 20.232 7.79138 20.232 6.08016C20.232 4.41788 19.662 2.88418 18.627 1.76153C17.5797 0.625613 16.1426 0 14.5802 0C13.4123 0 12.3428 0.369224 11.4012 1.09733C11.3922 1.10425 11.3833 1.1112 11.3744 1.11818C10.9099 1.48182 10.4884 1.92438 10.116 2.43932C9.74377 1.92457 9.32219 1.48188 8.85756 1.11825C8.84861 1.11125 8.83965 1.10428 8.83067 1.09733C7.88924 0.369224 6.81969 0 5.65182 0C4.08941 0 2.65218 0.625613 1.60486 1.76153C0.570044 2.88418 0 4.41788 0 6.08032C0 7.79138 0.637653 9.35765 2.00665 11.0096C3.23133 12.4873 4.99148 13.9873 7.02977 15.7243L7.03116 15.7255C7.72682 16.3184 8.51524 16.9904 9.33388 17.7061C9.55029 17.8957 9.82798 18 10.116 18C10.4039 18 10.6817 17.8957 10.8978 17.7064C11.7104 16.9958 12.4937 16.3282 13.1859 15.7382L13.2027 15.7238ZM3.39259 9.86103C4.49596 11.1923 6.11836 12.5827 8.19727 14.3543L8.20186 14.3582C8.78251 14.8531 9.4342 15.4085 10.116 16.0003C10.7918 15.4137 11.4382 14.8627 12.015 14.3711L12.0351 14.3539C14.1138 12.5826 15.7362 11.1923 16.8396 9.86089C18.0106 8.44796 18.432 7.27437 18.432 6.08016C18.432 4.82647 18.0038 3.74121 17.3036 2.98167C16.6014 2.22 15.6462 1.8 14.5802 1.8C13.8192 1.8 13.1354 2.0318 12.5025 2.52107C12.1739 2.7753 11.8613 3.0977 11.5745 3.49417L10.1159 5.51095L8.65743 3.4941C8.3709 3.09787 8.05823 2.77541 7.72955 2.52125C7.09689 2.03195 6.41293 1.8 5.65182 1.8C4.58583 1.8 3.63058 2.21998 2.92837 2.9815M2.92837 2.9815C2.22832 3.74106 1.8 4.82649 1.8 6.08032C1.8 7.27424 2.22144 8.44781 3.39259 9.86103" fill="black"/>
-            </svg>  
+            </svg>
           </button>
 
-          <button className="icon-button">
+          <Link to="/sebet" className="icon-button">
             <svg width="19" height="20" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fillRule="evenodd" clipRule="evenodd" d="M14.5 5.5H1.5V15C1.5 15.2761 1.72386 15.5 2 15.5H14C14.2761 15.5 14.5 15.2761 14.5 15V5.5ZM0 4V15C0 16.1046 0.895431 17 2 17H14C15.1046 17 16 16.1046 16 15V4H0Z" fill="black"/>
               <path fillRule="evenodd" clipRule="evenodd" d="M9.33085 1.5H6.66915C6.42751 1.5 6.22044 1.67281 6.17722 1.91056L5.79732 4H10.2027L9.82278 1.91056C9.77956 1.67281 9.57249 1.5 9.33085 1.5ZM11.2986 1.64223C11.1257 0.691248 10.2974 0 9.33085 0H6.66915C5.70258 0 4.87432 0.69125 4.70141 1.64223L4 5.5H12L11.2986 1.64223Z" fill="black"/>
             </svg>
-          </button>
+          </Link>
 
           <div className="your-account">
             <button className="icon-button">
@@ -74,7 +73,7 @@ export default function Header() {
                 <path fillRule="evenodd" clipRule="evenodd" d="M15.468 18C15.2116 14.3674 12.1834 11.5 8.48554 11.5C4.78766 11.5 1.75949 14.3674 1.50312 18H0C0.258809 13.5383 3.95897 10 8.48554 10C13.0121 10 16.7123 13.5383 16.9711 18H15.468Z" fill="black"/>
               </svg>
             </button>
-            <Link to="#" className="account-link">
+            <Link to="/register" className="account-link">
               Sizin hesabınız
             </Link>
             <button className="icon-button">
@@ -87,7 +86,6 @@ export default function Header() {
           </div>
         </div>
       </header>
-      
     </div>
   );
 }
