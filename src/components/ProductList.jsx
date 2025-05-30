@@ -6,27 +6,22 @@ const ProductList = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('https://test.mybrands.az/api/v1/products/?categories=17&product__gender=3'); // API URL-i dəyişin
+        const response = await fetch('https://test.mybrands.az/api/v1/products/?categories=17&product__gender=3');
         if (!response.ok) {
           throw new Error('Məlumat alınarkən xəta baş verdi');
         }
         const data = await response.json();
-        // console.log(data.results);
-        
-        setProducts(data.results); 
+        setProducts(data.results);
       } catch (err) {
         setError(err.message);
       } finally {
         setLoading(false);
       }
     };
-
     fetchProducts();
   }, []);
-
   if (loading) return <p>Məlumat yüklənir...</p>;
   if (error) return <p>Xəta: {error}</p>;
-
   return (
     <div className='container'>
       {products.map((product) => (
@@ -42,5 +37,4 @@ const ProductList = () => {
     </div>
   );
 };
-
 export default ProductList;
